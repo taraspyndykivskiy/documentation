@@ -1,0 +1,51 @@
+\doxysection{prog Namespace Reference}
+\label{namespaceprog}\index{prog@{prog}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \textbf{ sum} (a, b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{namespaceprog_a06863669f0f1735de8a55b2349ea9516}} 
+\index{prog@{prog}!sum@{sum}}
+\index{sum@{sum}!prog@{prog}}
+\doxysubsubsection{sum()}
+{\footnotesize\ttfamily def prog.\+sum (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This fucntion add two floats which belongs to [-100,100]
+​
+Args:
+    a:   float number
+    b:   float number
+​
+​
+Returns:
+    A float number is the result.
+​
+Raises:
+    AssertionError, ValueError.
+​
+Examples:
+    >>> print(sum(11.5,0.5))
+    12.0
+    
+    >>> print(sum(100.5,1.5))
+    Traceback (most recent call last):
+        ...
+    ValueError:<unprintable ValueError object>
+    
+    >>> print(sum(100,1.5))
+    Traceback (most recent call last):
+        ...
+        assert isinstance(a, float)
+    AssertionError:AssertionError
+    
+    >>> print(sum(1.5,"a"))
+    Traceback (most recent call last):
+        ...
+        assert isinstance(b, float)
+    AssertionError:AssertionError
+\end{DoxyVerb}
+ 
